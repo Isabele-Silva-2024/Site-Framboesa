@@ -3,28 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    
     <title>Cachinho de Framboesa</title>
     <style>
-        h1{
+        /* Aplica a fonte para todo o corpo do texto */
+        body {
+            font-family: 'Croissant One';
+        }
+        /* Ou aplica apenas para elementos específicos */
+        h1 {
+            font-family: 'Croissant One';
+            font-weight: 700; /* Versão em negrito */
             text-align: center;
         }
-    
         .container {
             display: grid; 
             place-items: center; 
         }
         footer {
-        background-color: #cf0e88;
-        color: white;
-        text-align: center;
-        padding: 0,3px;
-        position:fixed ;
-        bottom: 0;
-        width: 100%;
-        font-size: 14px;
+            background-color: #cf0e88;
+            color: white;
+            text-align: center;
+            padding: 0,3px;
+            position:fixed ;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
         }
         footer a {
             color: #f1f1f1;
@@ -32,29 +40,46 @@
         }
         footer a:hover {
             text-decoration: underline;
-        }   
+        }
+        .site-header {
+            width: 100%;
+            background-color: #cf0e88; 
+            box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); 
+        }
+        .header-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            align-items: center; 
+        }
+        .logo-link img {
+            height: 160px; /* Altere para a altura desejada */
+            width: auto;
+        }
+        .nav-menu a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #ffffff;
+        }
     </style>
 </head>
-<body>
-    <header style="background-color: #cf0e88; padding: 20px; text-align: center; color: white;">
-        <div class="container-fluid">
-            <img src="img/Framboesa.png" class="navbar-brand" width="150">
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="collapsibleNavbar" style="">
-                <ul class="navbar-nav">
-                    <li class="nav-item text-center">
-                        <a class="nav-link" href="index.html" style="color: white;">Cachinho de Framboesa</a>
-                    </li>
-                </ul>
-          </div>
+
+<body style="background-image: url('img/fundo.png'); background-size: cover; ">
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+            <img src="img/Framboesa.png" alt="Cachinho de Framboesa">
+            </a>
+            <nav class="nav-menu">
+            <h1 style=" color:#ffffff;">Cachinho de Framboesa</h1>
+            </nav>
         </div>
     </header>
-        <br><br><br>
-        <footer>
-        <br>
-          <p>&copy; 2026 Cachinho de Framboesa.</p>
-        </footer>
 </body>
+    <br><br><br>
+    <footer>
+    <br>
+        <p>&copy; 2026 Cachinho de Framboesa.</p>
+    </footer>
 </html>
